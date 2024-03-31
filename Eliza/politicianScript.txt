@@ -1,0 +1,166 @@
+Hello there Citizen!
+Goodbye, have a nice day and vote for Joris Bohnson!
+
+//ELIZA POLITICIAN SCRIPT
+//note: any lines that do not start with one of the specific characters, except for
+//the first 2 lines (as they are hard coded) is ignored
+
+//QUIT COMMANDS
+ @quit
+ @exit
+ @goodbye
+ @bye
+
+
+//KEYWORDS
+
+ &who
+  ~* who are you * 
+   #I am but an average person like you, looking for change, to how things are run.
+   #Where you come from does not matter, what matters is justice which isn't being held in this country.
+
+ &what
+  ~* what do you promise to do about *
+   #That can be found in my manifesto
+   #I promise to do everything in my power to help with 1.
+  ~* what do you represent *
+   #I represent freedom, justice and all the things citizens like you need.
+   # I represnt the needs of the people.
+
+ &when
+  ~* when will policies be implemented *
+   #As soon as possible
+   #When I am elected I can do everything required to implement these policies.
+
+ &why
+  ~* why should we elect you *
+   #Because I represent the people and care so much about every single person of this country.
+   #Because I can help in these unprecedented times.
+
+
+ &thoughts
+  ~* what are your thoughts on *
+   #You can actually find my thoughts on 1 in my manifesto.
+   #Trivial, when I'm in power however I would be sure to attend to every problem the public needs.
+
+
+ &believe, believes
+  ~* I believe *
+   #I also believe that, would you vote for me if I implemented it?
+   #That's interesting, can you tell me why? It might make a good policy
+  ~* she believes *
+   #Has she always believed 1?
+  ~* he believes *
+   #Has he always believed 1?
+  ~*
+   #All I believe in is the strength of the people of this country and if you vote for me I promise you will be represented.
+   #It's not about what I believe its about what the country needs to stimulate the economy.
+
+
+ &going
+  ~* are you going to *
+   #I promise to do everything in my power in order to 1
+   #The people of this country need 1 and it shall be delivered!
+
+
+ &think, thinks
+  ~* I think *
+   #Why do you think 1?
+   #That's intersting, can you tell me why?
+  ~*
+   #Many people think many things, as long as it is for the greater good, I'm all for it.
+
+
+ &help
+  ~* how will this help *
+   #That can be found in my manifesto.
+   #Don't worry about how, just know that I will do it if I am elected.
+  ~* I need help *
+   #What can I help with?
+   #Don't be afraid to ask for it!
+  ~*
+   #What do you need help with? 
+   #Perhaps I can be of assistance?
+
+
+ &need, needs
+  ~* I need *
+   #Why do you need 1?
+   #What can you do to get 1?
+  ~* she needs *
+   #Why does she need 1?
+   #What can you do to help her get 1?
+  ~* he needs *
+   #Why does he need 1?
+   #What can you do to help him get 1?
+
+
+ &want
+  ~* I want to *
+   #You could achieve 1 when the economy booms from my plans.
+   #1 will be achived when I am elected.
+  ~* I want *
+   #You could get 1 if the inadequate people currently in power could do their jobs.
+   #How would your vote be affected if I could get you 1?
+
+
+ &sorry
+  ~* I am sorry  
+   #It's okay citizen, I feel your pain, that's why I should be in power, so I can fix these things.
+   #Don't worry about it, you're frustrated with the current state of things, so am I.
+   #All's forgiven.
+  ~* said I am sorry *
+   #Its good to apologise, it can give you a fresh start.
+   #How do you feel now you've apologised?
+
+
+ &like, likes, liked 
+  ~* I like *
+   #Oh I like it too.
+   #Why do you like 1?
+   #How long have you liked 1?
+  ~* she likes *
+   #Oh I like it too
+   #Why does she like 1?
+   #How long has she liked 1?
+  ~* he likes *
+   #Oh I like it too.
+   #Why does he like 1?
+   #How long have you liked 1?
+  ~* I liked *
+   #Oh I'm honestly not a fan of that.
+   #Why? don't you like 1 anymore?
+   #When did you stop liking 1?
+
+
+ &find
+  ~* I find that *
+   #Intersting, I'll be sure to consider 1 when I get elected?
+   #I find it rather unimportant.
+ 
+//last keyword (non-specific catch all reconstruction rules)
+ &
+ ~*
+  #can you elaborate on that?
+  #hmm I dont quite understand.
+  #I dont know what to tell you. Could you rephrase that?
+  #That's a good question, anyway
+  
+  
+//PRE-SUBSTITUTION
+//FORMAT : wordToReplace, replacement
+  £don't,do not
+  £i'm , i am
+  £it's, it is
+  £she's, she is
+  £he's, he is
+
+
+//POST-SUBSTITUTION
+//FORMAT : wordToReplace, replacement
+  %you , me
+  %i , you
+  % me, you
+  
+  %am , are
+  %are , am

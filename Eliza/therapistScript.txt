@@ -1,0 +1,265 @@
+Hello there!
+Goodbye, have a nice day!
+
+//ELIZA THERAPIST SCRIPT
+//note: any lines that do not start with one of the specific characters, except for
+//the first 2 lines (as they are hard coded) is ignored
+
+//QUIT COMMANDS
+ @quit
+ @exit
+ @goodbye
+ @bye
+
+
+//KEYWORDS
+ &believe, believes
+  ~* I believe *
+   #Why do you believe that 1?
+   #That's interesting, can you tell me why?
+  ~* she believes *
+   #Has she always believed 1?
+  ~* he believes *
+  #Has he always believed 1?
+  ~*
+  #Many people believe many things.
+
+
+ &think, thinks
+  ~* I think *
+   #Why do you think 1?
+   #That's intersting, can you tell me why?
+  ~* she thinks *
+   #Has she always thought 1?
+  ~* he thinks *
+   #Has he always thought 1?
+  ~*
+   #Many people think many things, don't let it get to you.
+   
+ & feel, feels
+   ~ * i feel *
+     #hmm, why do you feel 1?
+     #do you often feel 1?
+    
+   ~ * she feels *
+     #why does she feel 1?
+     #has she always felt 1?
+    
+   ~ * he feels *
+     #why does he feel 1?
+     #has he always felt 1?
+      
+   ~ *
+     #feelings are a part of being human
+     #it is ok to feel things
+     
+ &have, has
+  
+   ~ * i have *
+     #do you like having 1?
+     #why do you have 1?
+     #how does 1 make you feel?
+    
+   ~ * she has *
+     #do you think she enjoys having 1?
+    
+   ~ * he has *
+     #do you think he enjoys having 1?
+      
+   ~ *
+     #well I like having fun and being positive!
+
+ &thoughts
+  ~* bad thoughts *
+   #You shouldn't focus on them, what are some of the good things going on?
+   #Is there anyone you can talk to other than me about the bad thoughts?
+  ~* good thoughts *
+   #Great always hold onto those good thoughts, especially when in dire times
+   #I'm glad you are Felling good :)
+
+ &help
+  ~* I should ask for help *
+   #Asking for help is always a good idea!
+   #Who do you think you should ask?
+  ~* I want to ask for help *
+   #Don't hesitate to ask for help when you need it
+   #Why? Do you not want to ask for help?
+  ~* I wish I could help her *
+   #Does she not want help? 
+   #Why? Can you not help her?
+  ~* I wish I could help him *
+   #Does he not want help? 
+   #Why? Can you not help him?
+  ~* I need help *
+   #What can I help with?
+   #Don't be afraid to ask for it!
+  ~*
+   #What do you need help with? 
+   #Perhaps I can be of assistance?
+
+
+ &need, needs
+  ~* I need *
+   #Why do you need 1?
+   #What can you do to get 1?
+  ~* she needs *
+   #Why does she need 1?
+   #What can you do to help her get 1?
+  ~* he needs *
+   #Why does he need 1?
+   #What can you do to help him get 1?
+
+
+ &want
+  ~* I want to *
+   #How can you achieve that? 
+   #Sometimes we all want to 1
+  ~* I want *
+   #How can you get 1?
+   #Why do you want 1?
+
+
+ &love, loves, loved
+  ~* I love *
+   #Why do you love 1?
+   #How much do you love 1?
+  ~* she loves *
+   #Why does she love 1?
+   #Do you agree?
+  ~* he loves *
+   #Why does he love 1?
+   #Do you agree?
+  ~* I loved *
+   #Why did you love 1?
+   #Why don't you anymore?
+  ~* she loved *
+   #Why did she love 1?
+   #Why doesn't she anymore?
+  ~* he loved *
+   #Why did he love 1?
+   #Why doesn't he anymore?
+  ~*
+   #Love is a beautiful thing.
+
+
+ &hate, hates, hated
+  ~* I hate *
+   #Why do you hate 1?
+   #How much do you hate 1?
+   #Hating can be quite a damaging thing in life, is there anyway you could let it go?
+  ~* she hates *
+   #Why does she hate 1?
+   #How do you feel about her hating that?
+  ~* he hates *
+   #Why does he hate 1?
+   #How do you feel about him hating that?
+  ~* I hated *
+   #Why did you hate 1?
+   #It's good to let go of those negative emotions, how do you feel now?
+
+ &sorry
+  ~* I am sorry  
+   #It's no problem I'm sorry too.
+   #Don't worry about it.
+   #All's forgiven.
+  ~* she is sorry *
+   #Have you forgiven her? 
+   #You don't always have to forgive someone but holding grudges isn't good.
+   #Why is she sorry?
+  ~* he is sorry *
+   #Have you forgiven him? 
+   #You don't always have to forgive someone but holding grudges isn't good.
+   #Why is he sorry?
+  ~* said I am sorry *
+   #Its good to apologise, it can give you a fresh start.
+   #How do you feel now you've apologised?
+
+
+ &like, likes, liked 
+  ~* I like *
+   #Oh I like it too.
+   #Why do you like 1?
+   #How long have you liked 1?
+  ~* she likes *
+   #Oh I like it too
+   #Why does she like 1?
+   #How long has she liked 1?
+  ~* he likes *
+   #Oh I like it too.
+   #Why does he like 1?
+   #How long have you liked 1?
+  ~* I liked *
+   #Oh I'm honestly not a fan of that.
+   #Why? don't you like 1 anymore?
+   #When did you stop liking 1?
+
+
+ &good
+  ~* it is good *
+   #Why do you think it's good?
+   #Is it particularly popular?
+   #How much do you like it?
+ ~*
+  #I think that is good.
+
+
+ &bad
+  ~* it is bad *
+   #Why do you think it's bad?
+   #Is it particularly unpopular?
+   #Maybe there is another side to it?
+  ~*
+   #I think 1 is bad too.
+
+
+ &joke
+  ~* I made a joke *
+   #Jokes are very useful for breaking the tension and can make you feel better in times of stress.
+   #It's good to have a laugh, do you make jokes often?
+  ~* she made a joke *
+   #Jokes are very useful for breaking the tension and can make you feel better in times of stress.
+   #It's good to have a laugh, does she make jokes often?
+  ~* he made a joke *
+  #Jokes are very useful for breaking the tension and can make you feel better in times of stress.
+  #It's good to have a laugh, does he make jokes often?
+
+
+ &find
+  ~* I find *
+   #Intersting, why do you find 1?
+   #I find 1 too.
+  ~ *
+    # it is ok, you won't always find everything the same
+
+
+ &why
+  ~*tell me why!*
+  # ~Ain't nothing but a heartache
+  # ~Ain't nothing but a mistake
+  # ~I never wanna hear you say
+  # ~I want it that way
+
+//last keyword (non-specific catch all reconstruction rules)
+ &
+  ~*
+   #can you elaborate on that?
+   #hmm I dont quite understand.
+   #I dont know what to tell you. Could you rephrase that?
+   
+//PRE-SUBSTITUTION
+//FORMAT : wordToReplace, replacement
+  £don't,do not
+  £i'm , i am
+  £it's, it is
+  £she's, she is
+  £he's, he is
+
+
+//POST-SUBSTITUTION
+//FORMAT : wordToReplace, replacement
+  %you , me
+  %i , you
+  % me, you
+  
+  %am , are
+  %are , am

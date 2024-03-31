@@ -1,0 +1,284 @@
+Greetings friend! I hope you are having a good day!
+Have a happy fun smile time!!!
+
+//ELIZA DOCTOR SCRIPT
+//note: any lines that do not start with one of the specific characters, except for
+//the first 2 lines (as they are hard coded) is ignored
+
+//QUIT COMMANDS
+ @quit
+ @exit
+ @goodbye
+ @bye
+
+
+
+
+
+
+//KEYWORDS
+  & believe, believes
+    ~ * i believe *
+      # I believe in you buddy! Just like you believe 1!
+      # Even though you believe 1, its most important to believe in yourself!
+    ~ * she believes *
+      # I hope she belives in herself as much as she believes 1!
+      # Tell her to believe in herself, just like she believes 1!
+    ~ * he believes *
+      # I hope she belives in herself as much as she believes *
+      # Tell her to believe in herself, just like she believes 1!
+    ~ *
+      # believing is fun! Isn't it friend?
+
+  & feel, feels
+    ~ * i feel *
+      #if you don't like feeling 1, try being happy!
+      #do you often feel 1? My favourite emotion to feel is happiness!
+    
+    ~ * she feels *
+      # if she feels sad, you should try giving her some positive encouragement!
+      #Yay! i love talking about other people feeling 1!
+    
+    ~ * he feels *
+      # if she feels sad, you should try giving her some positive encouragement!
+      #Yay! i love talking about other people feeling 1!
+      
+    ~ *
+      #feelings are a part of being human, and that is awesome!
+      #I know you can do it buddy!!!!!! XDDDD
+  
+  & am, is
+    ~ * i am *
+      #do you feel happy when you are 1? i hope so!
+      #is being 1 your favourite state of being?
+    
+    ~ * she is *
+      #yay! i'm so glad she feels 1!!!
+    
+    ~ * he is *
+      #yay! i'm so glad he feels 1!!!
+      
+    ~ *
+      #no matter what is happening, it is important to stay positive and motivated!
+      #I hope everyone feels positive!
+  
+  
+  & sorry
+    ~ * i am sorry *
+      #dont worry buddy! you don't need to apologise for 1!
+    
+    ~ * she is sorry *
+      #it would be super cool if you accepted her apology for 1!
+    
+    ~ * he is sorry *
+      #it would be super cool if you accepted his apology for 1!
+      
+    *don't worry friend, appologies are not necessary!
+    
+    
+  & said, says
+  
+    ~ * i said *
+      #wow! its so cool that you said 1!!
+    
+    ~ * she said *
+      #wow! its so cool that she said 1!!
+    
+    ~ * he said *
+      #wow! its so cool that he said 1!!
+    
+    ~ * she says *
+      #wow! its so cool that she said 1!!
+    
+    ~ * he says *
+      #wow! its so cool that he said 1!!
+      
+    ~ *
+      #many people say many things, the important thing is to remain positive!
+  
+  & do not, does not
+  
+    ~ * i do not *
+      #thats ok buddy! sometimes we all don't 1!
+      #aww, its a shame you don't 1, I believe in you!
+    
+    ~ * she does not *
+      #sometimes we all don't 1!
+      #aww, its a shame she doesn't 1, i still believe though!
+    
+    ~ * he does not *
+      #sometimes we all don't 1!
+      #aww, its a shame he doesn't 1, i still belive though!
+      
+    ~ *
+      #there are many things that we all do and don't want to do, i prefer to do the things that make me happy!
+    
+    
+  &have, has
+  
+    ~ * i have *
+      #woah! its so cool that you have 1!
+      #even though you have 1, i still belive in you friend!
+    
+    ~ * she has *
+      #do you think she enjoys having 1?
+    
+    ~ * he has *
+      #do you think he enjoys having 1?
+      
+    ~ *
+      #well I like having fun and being positive!
+    
+  &think, thinks, thought, thoughts
+  
+    ~ * i think *
+      #hmm thats a very interesting thought!
+      #wow, i had never thought 1 before!
+    
+    ~ * she thinks *
+      #hmm thats a very interesting thought!
+      #wow, i had never thought 1 before!
+    
+    ~ * he thinks *
+      #hmm thats a very interesting thought!
+      #wow, i had never thought 1 before!
+      
+    ~ * bad thoughts *
+     # you shouldn't focus too much on bad thoughts, try to be more positive instead!
+     # try not to dwell on bad thoughts too much, why not lighten the mood with a good joke!
+  
+   ~ * good thoughts *
+     # i'm glad that you are having good thoughts
+     # its always good to hold onto good thougts
+     
+   ~ * i thought *
+     # hmm, thats an interesting thought
+     # why did you think 1?
+      
+    ~ *
+      #I do like to think about things, I am sure you are very good at thinking
+  
+  &love, loves
+  
+    ~ * i love *
+      #I love 1 too!
+      #wow its great to hear that you love 1!
+      #when did you start loving 1?
+    
+    ~ * she loves *
+      #I love 1 too!
+      #wow its great to hear that she loves 1!
+      #when did she start loving 1?
+    
+    ~ * he loves *
+      #I love 1 too!
+      #wow its great to hear that he loves 1!
+      #when did he start loving 1?
+    
+    ~ *
+      isn't it really great to hear about peoples love of different things!?
+      I love hearing about what people love
+  
+  &hate
+  
+    ~ * i hate *
+      #hate isn't a good emotion to feel, even if it is towards 1
+      #you should try letting go of your hatred of 1, it could make you much happier
+    
+    ~ * she hates *
+      #hate is never a good emotion to feel, even if it is towards 1
+      #she should try letting go of her hatred of 1, it could make her much happier
+    
+    ~ * he hates *
+      #hate isn't a good emotion to feel, even if it is towards 1
+      #he should try letting go of his hatred of 1, it could make him much happier
+    
+    ~ *
+      #hate isn't a good emotino to feel, you should always try to let it go
+      #The monks used to say that revenge is like a two-headed rat viper. While you watch your enemy go down, you're being poisoned yourself
+  
+  
+  &like, likes
+  
+    ~ * i like *
+      # i'm glad to hear that you like 1!
+      # wow, I like 1 too!
+    
+    ~ * she likes *
+      # i'm glad to hear that she likes 1!
+      # wow, I like 1 too!
+    
+    ~ * he likes *
+      # i'm glad to hear that he likes 1!
+      # wow, I like 1 too!
+      
+    ~ *
+      # its always good to like things
+      # I love to hear what people like!
+   
+  
+  
+  &good
+  
+  ~ * it is good *
+    # i'm glad to hear some good news!
+    #wow that is good!
+    
+  ~ *
+    # please do tell me about any good news you have!
+  
+  
+  
+  &find
+  
+    ~ * i find *
+      # do you enjoy that you find 1?
+      # wow, i find 1 too!
+    
+    ~ * she finds *
+      # does she enjoy that she finds !?
+      # wow, i find 1 too!
+    
+    ~ * he finds *
+      # does he enjoy that he finds !?
+      # wow, i find 1 too!
+  
+  
+  
+  &help
+    
+    ~ *
+      #you should never be afraid to ask for help
+      #i'm sure people have been through that before, maybe if you asked for some help?
+      
+  
+
+//last keyword (non-specific catch all reconstruction rules)
+  &*
+    ~*
+      #I'm not quite sure i understand, but that's really cool nonetheless!
+      #I'm not quite sure i understand, i believe in you!
+      #poggers!
+      #lets talk about our feelings!
+      #could you tell me some more about that?
+
+
+//PRE-SUBSTITUTION
+//FORMAT : wordToReplace, replacement
+  £don't,do not
+  £i'm , i am
+  £it's, it is
+  £she's, she is
+  £he's, he is
+  £haven't, have not
+
+
+//POST-SUBSTITUTION
+//FORMAT : wordToReplace, replacement
+  %you , me
+  %i , you
+  % me, you
+  
+  %am , are
+  %are , am
+
